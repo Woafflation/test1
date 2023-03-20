@@ -1,7 +1,9 @@
 import React from "react";
 import s from "./Post.module.css";
+import { useTelegram } from "../../hooks/useTelegram";
 
 const Post = () => {
+  const { user } = useTelegram();
   return (
     <div className={s.post}>
       <img
